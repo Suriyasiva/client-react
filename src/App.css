@@ -1,38 +1,145 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container-fluid {
+  background: url("https://cdn.wallpapersafari.com/29/13/mfK9MI.jpg");
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card-center {
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+}
+.card-container {
+  background-color: transparent;
+  width: 400px;
+  height: 530px;
+  border-radius: 6px;
 }
 
-.App-link {
-  color: #61dafb;
+.logo-container {
+  display: flex;
+  justify-content: center;
+}
+.form-container {
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 60px;
+}
+.register-container {
+  margin-top: 30px;
+}
+input {
+  color: #212529;
+  background-color: transparent;
+  border-color: white !important;
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-radius: 0 !important;
+  border-bottom: 1px solid white !important;
+  outline: 0;
+  box-shadow: none !important;
+}
+.form-control:focus {
+  color: #212529;
+  background-color: transparent;
+  border-color: white !important;
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-radius: 0 !important;
+  border-bottom: 1px solid white;
+  outline: 0;
+  box-shadow: none !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-check:focus + .btn-primary,
+.btn-primary:focus {
+  color: #fff;
+  /* background-color: #0dba4a !important; */
+  border-color: transparent;
+  box-shadow: none !important;
+}
+.signup {
+  text-decoration: none;
+}
+.forgot-container {
+  font-size: 13px;
+}
+.forgot {
+  text-decoration: none;
+}
+.btn-check:focus + .btn,
+.btn:focus {
+  outline: 0;
+  box-shadow: none !important;
+}
+
+.border {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.fa-facebook {
+  color: #3d67bb;
+}
+.fa-twitter {
+  color: #06b5fa;
+}
+
+.login {
+  background-color: #146ebe !important;
+  color: #fff;
+}
+.login:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+.form-control {
+  color: #212529;
+  background-color: transparent;
+  border-color: black !important;
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-radius: 0 !important;
+  border-bottom: 1px solid black !important;
+  outline: 0;
+  box-shadow: none !important;
+}
+.forgot-container {
+  margin-top: 2px;
+  margin-bottom: 5px;
+}
+.sponsors-container {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  font-weight: bold;
+}
+.register-container {
+  display: flex;
+  justify-content: center;
+}
+.option-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 0px;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+.logout {
+  display: flex;
+  justify-content: end;
 }
